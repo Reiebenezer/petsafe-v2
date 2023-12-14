@@ -22,7 +22,7 @@ public class SQLite {
 
         if (App.runningFromJAR() || App.runningFromEXE()) {
           String jarPath = getClass().getProtectionDomain().getCodeSource().getLocation().getPath();
-          String jarDir = new File(jarPath).getParent().replace("\\target", "");
+          String jarDir = new File(jarPath).getParent().replace("\\target", "").replace("%20", " ");
           url = "jdbc:sqlite:" + jarDir + File.separator + "petsafe.db";
 
         } else {
