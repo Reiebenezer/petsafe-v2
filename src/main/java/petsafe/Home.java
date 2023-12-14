@@ -18,6 +18,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.FlowPane;
+import javafx.scene.layout.VBox;
 import javafx.util.Duration;
 import petsafe.components.Recipe;
 
@@ -31,6 +32,9 @@ public class Home {
 
   @FXML
   private TextField searchBar;
+
+  @FXML
+  private VBox loading;
 
   private List<Recipe> recipes;
 
@@ -54,7 +58,8 @@ public class Home {
 
         List<String> ingredients, procedure;
 
-        Type listOfMyClassObject = new TypeToken<ArrayList<String>>() {}.getType();
+        Type listOfMyClassObject = new TypeToken<ArrayList<String>>() {
+        }.getType();
         ingredients = gson.fromJson(results.getString("ingredients"), listOfMyClassObject);
         procedure = gson.fromJson(results.getString("procedure"), listOfMyClassObject);
 
@@ -74,6 +79,8 @@ public class Home {
     // Scrollbar customization
 
     Platform.runLater(() -> {
+      loading.setVisible(false);
+      
       content.getChildren().addAll(recipes);
       adjustWidth();
 
@@ -108,22 +115,23 @@ public class Home {
     for (Recipe recipe : recipes) {
       if (recipe.getRecipeName().toLowerCase().contains(searchString)) {
         tmp.add(recipe);
-      } 
+      }
     }
 
     content.getChildren().clear();
     content.getChildren().addAll(tmp);
-    
+
   }
 
   private void adjustWidth() {
-    if (recipes.size() == 0) return;
-    
+    if (recipes.size() == 0)
+      return;
+
     double availableWidth = content.getWidth();
-    
+
     int columns = (int) (availableWidth / (recipes.get(0).getPrefWidth()));
     double gap = Math.max((availableWidth % recipes.get(0).getPrefWidth()) / columns, 0.0);
-    
+
     content.setHgap(gap);
     content.setVgap(gap);
   }

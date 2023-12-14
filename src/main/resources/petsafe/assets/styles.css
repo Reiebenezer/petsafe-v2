@@ -14,11 +14,36 @@
 }
 
 .button {
+  -fx-font-family: "Josefin Sans Medium";
+  -fx-font-size: 20;
+  -fx-text-fill: #445d48;
+
   -fx-background-color: transparent;
+  -fx-padding: 8 16;
+  -fx-background-radius: 6;
 }
 
 .button:hover {
   -fx-background-color: #d6cc99;
+}
+
+.nav-button {
+  -fx-background-radius: 0;
+  -fx-text-fill: #080A0C;
+}
+
+.nav-button:hover,
+.nav-selected {
+  -fx-background-color: #d6cc99, white;
+  -fx-background-insets: 0, 0 0 3 0;
+}
+
+.nav-selected {
+  -fx-background-color: #e0b9b3, white;
+}
+
+.nav-hbox {
+  -fx-spacing: -1;
 }
 
 .text {
@@ -36,20 +61,10 @@
   -fx-font-size: 36;
 }
 
-.subtitle, .button {
+.subtitle {
   -fx-font-family: "Josefin Sans Medium";
   -fx-font-size: 24;
   -fx-text-fill: #080A0C;
-}
-
-.small-text {
-  -fx-font-family: "Josefin Sans Light";
-  -fx-font-size: 12;
-}
-
-.description {
-  -fx-font-family: "Josefin Sans Light";
-  -fx-font-size: 16;
 }
 
 .body-text {
@@ -57,13 +72,24 @@
   -fx-font-size: 20;
 }
 
+.description {
+  -fx-font-family: "Josefin Sans Light";
+  -fx-font-size: 16;
+}
+
+.small-text {
+  -fx-font-family: "Josefin Sans Light";
+  -fx-font-size: 12;
+}
+
+
 .separator .line {
   -fx-background-color: inherit;
   -fx-border-color: null;
 }
 
 .separator {
-  -fx-background-color: #445D48;
+  -fx-background-color: #e0b9b344;
   -fx-pref-width: 1;
 }
 
@@ -113,4 +139,30 @@
 
 .text-area .content {
   -fx-border-color: none;
+}
+
+.slider .track {
+  /* -fx-background-color: linear-gradient(to left, #e0b9b3, #445d48); */
+  -fx-background-color: #e0b9b3;
+}
+
+.slider .thumb {
+  -fx-background-color: #445d48, #f0f0f0;
+  -fx-background-insets: 0, 1;
+}
+
+.check-box .box {
+  -fx-background-color: transparent;
+  -fx-border-color: #d6cc99;
+  -fx-border-radius: 4;
+}
+
+.progress-bar,
+.progress-indicator {
+  -fx-accent: #445d58;
+}
+
+.progress-bar .track {
+  -fx-background-color: #d6cc99;
+  -fx-background-radius: 2;
 }

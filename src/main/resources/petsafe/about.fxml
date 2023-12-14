@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.Separator?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -46,61 +46,73 @@
                         <Label layoutX="10.0" layoutY="10.0" styleClass="large-title" stylesheets="@assets/styles.css" text="Meet the Team" wrapText="true" GridPane.columnIndex="1" />
                         <VBox spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <children>
-                              <HBox spacing="10.0">
+                              <HBox spacing="11.0">
                                  <children>
-                                    <ImageView fitHeight="96.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
                                           <Image url="@assets/rei.jpg" />
                                        </image>
                                     </ImageView>
-                                    <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+                                    <VBox HBox.hgrow="ALWAYS">
                                        <children>
                                           <Label styleClass="subtitle" stylesheets="@assets/styles.css" text="Rei Ebenezer Duhina" wrapText="true" />
-                                          <Label layoutX="10.0" layoutY="10.0" styleClass="description" stylesheets="@assets/styles.css" text="Lf kaduo sa ml hahahahaha" wrapText="true" />
+                                          <Label layoutX="10.0" layoutY="10.0" styleClass="description" stylesheets="@assets/styles.css" text="*cluck* Don't ask why" wrapText="true" />
                                        </children>
                                     </VBox>
                                  </children>
                               </HBox>
-                              <HBox spacing="10.0">
+                              <HBox spacing="11.0">
                                  <children>
-                                    <ImageView fitHeight="96.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true" />
-                                    <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+                                    <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@assets/prince.jpg" />
+                                       </image></ImageView>
+                                    <VBox HBox.hgrow="ALWAYS">
                                        <children>
                                           <Label styleClass="subtitle" stylesheets="@assets/styles.css" text="Prince Alexander Malatuba" wrapText="true" />
-                                          <Label layoutX="10.0" layoutY="10.0" styleClass="description" stylesheets="@assets/styles.css" text="The leader of the group" wrapText="true" />
+                                          <Label layoutX="10.0" layoutY="10.0" styleClass="description" stylesheets="@assets/styles.css" text="Daddy bugger and taster" wrapText="true" />
                                        </children>
                                     </VBox>
                                  </children>
                               </HBox>
-                              <HBox spacing="10.0">
+                              <HBox spacing="11.0">
                                  <children>
-                                    <ImageView fitHeight="96.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true" />
-                                    <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+                                    <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@assets/jill.jpg" />
+                                       </image></ImageView>
+                                    <VBox HBox.hgrow="ALWAYS">
                                        <children>
                                           <Label styleClass="subtitle" stylesheets="@assets/styles.css" text="Jill Navarra" wrapText="true" />
-                                          <Label layoutX="10.0" layoutY="10.0" styleClass="description" stylesheets="@assets/styles.css" text="The leader of the group" wrapText="true" />
+                                          <Label layoutX="10.0" layoutY="10.0" prefHeight="56.0" prefWidth="370.0" styleClass="description" stylesheets="@assets/styles.css" text="I quote, &quot;Let your mistakes be a source of your inspiration to be better and do better. And let your-" wrapText="true" />
                                        </children>
                                     </VBox>
                                  </children>
                               </HBox>
-                              <HBox spacing="10.0">
+                              <HBox spacing="11.0">
                                  <children>
-                                    <ImageView fitHeight="96.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true" />
-                                    <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+                                    <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@assets/pauline.jpg" />
+                                       </image></ImageView>
+                                    <VBox HBox.hgrow="ALWAYS">
                                        <children>
                                           <Label styleClass="subtitle" stylesheets="@assets/styles.css" text="Pauline Joy Bautista" wrapText="true" />
-                                          <Label layoutX="10.0" layoutY="10.0" styleClass="description" stylesheets="@assets/styles.css" text="The leader of the group" wrapText="true" />
+                                          <Label layoutX="10.0" layoutY="10.0" styleClass="description" stylesheets="@assets/styles.css" text="Because I'm a pokemon master" wrapText="true" />
                                        </children>
                                     </VBox>
                                  </children>
                               </HBox>
-                              <HBox spacing="10.0">
+                              <HBox spacing="11.0">
                                  <children>
-                                    <ImageView fitHeight="96.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true" />
-                                    <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+                                    <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@assets/ashley.jpg" />
+                                       </image></ImageView>
+                                    <VBox HBox.hgrow="ALWAYS">
                                        <children>
                                           <Label styleClass="subtitle" stylesheets="@assets/styles.css" text="Ashley Denise Feliciano" wrapText="true" />
-                                          <Label layoutX="10.0" layoutY="10.0" styleClass="description" stylesheets="@assets/styles.css" text="The leader of the group" wrapText="true" />
+                                          <Label layoutX="10.0" layoutY="10.0" styleClass="description" stylesheets="@assets/styles.css" text="Would rather sleep" wrapText="true" />
                                        </children>
                                     </VBox>
                                  </children>
@@ -125,7 +137,7 @@
             <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" />
          </columnConstraints>
          <rowConstraints>
-            <RowConstraints minHeight="10.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints fillHeight="false" minHeight="10.0" valignment="CENTER" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
             <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
@@ -144,18 +156,23 @@
                   <Insets left="20.0" right="20.0" />
                </GridPane.margin>
             </Label>
-            <HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="120.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <HBox alignment="CENTER" styleClass="nav-hbox" stylesheets="@assets/styles.css" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                <children>
-                  <Button mnemonicParsing="false" onAction="#backToHome" stylesheets="@assets/styles.css" text="Home">
+                  <Button mnemonicParsing="false" onAction="#backToHome" styleClass="nav-button" stylesheets="@assets/styles.css" text="Home">
                      <HBox.margin>
-                        <Insets left="1.0" right="1.0" />
+                        <Insets />
                      </HBox.margin>
                   </Button>
-                  <Separator maxHeight="-Infinity" orientation="VERTICAL" prefHeight="40.0" prefWidth="5.0" stylesheets="@assets/styles.css" />
-                  <Button layoutX="263.0" layoutY="27.0" mnemonicParsing="false" onAction="#addRecipe" stylesheets="@assets/styles.css" text="Add Recipe">
+                  <Button layoutX="263.0" layoutY="27.0" mnemonicParsing="false" onAction="#addRecipe" styleClass="nav-button" stylesheets="@assets/styles.css" text="Add Recipe">
                      <HBox.margin>
-                        <Insets left="1.0" right="1.0" />
+                        <Insets />
                      </HBox.margin>
+                  </Button>
+                  <Button layoutX="371.0" layoutY="10.0" mnemonicParsing="false" stylesheets="@assets/styles.css" text="About">
+                     <styleClass>
+                        <String fx:value="nav-button" />
+                        <String fx:value="nav-selected" />
+                     </styleClass>
                   </Button>
                </children>
             </HBox>

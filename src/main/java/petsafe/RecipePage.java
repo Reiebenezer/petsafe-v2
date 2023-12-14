@@ -43,6 +43,9 @@ public class RecipePage {
   private ScrollPane scrollPane;
 
   @FXML
+  private Label isPetSafeLabel;
+
+  @FXML
   void backToHome(ActionEvent event) throws IOException {
     App.setRoot("home");
   }
@@ -60,6 +63,9 @@ public class RecipePage {
 
     this.name.setText(name); // Name
     this.description.setText(description); // Description
+    
+    // Set Rating
+    isPetSafeLabel.setText(ispetsafe ? "Safe for pets" : "Not safe for pets");
 
     ratingToStars(rating);
     imageContainer.setImage(recipeImg);

@@ -4,7 +4,6 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.Separator?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -37,19 +36,24 @@
                         <RowConstraints minHeight="10.0" valignment="TOP" vgrow="ALWAYS" />
                     </rowConstraints>
                      <children>
-                        <VBox spacing="4.0">
+                        <VBox spacing="4.0" GridPane.valignment="TOP">
                            <children>
                               <Label fx:id="name" styleClass="large-title" stylesheets="@assets/styles.css" text="Recipe Name" wrapText="true" />
-                              <HBox fx:id="ratingHolder" spacing="2.0" />
+                              <HBox alignment="CENTER_LEFT" spacing="10.0">
+                                 <children>
+                                    <HBox fx:id="ratingHolder" spacing="2.0" />
+                                    <Label fx:id="isPetSafeLabel" maxWidth="1.7976931348623157E308" styleClass="small-text" stylesheets="@assets/styles.css" text="Safe for pets" wrapText="true" />
+                                 </children>
+                              </HBox>
                            </children>
                         </VBox>
-                        <Label fx:id="description" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" styleClass="body-text" stylesheets="@assets/styles.css" text="Recipe Description" wrapText="true" GridPane.rowIndex="1" GridPane.valignment="TOP" />
-                        <VBox spacing="4.0" GridPane.rowIndex="3">
+                        <Label fx:id="description" layoutX="10.0" layoutY="10.0" styleClass="body-text" stylesheets="@assets/styles.css" text="Recipe Description" wrapText="true" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                        <VBox spacing="4.0" GridPane.rowIndex="3" GridPane.valignment="TOP">
                            <children>
                               <Label fx:id="ingredients" maxWidth="1.7976931348623157E308" styleClass="body-text" stylesheets="@assets/styles.css" text="Recipe Ingredients" wrapText="true" />
                            </children>
                         </VBox>
-                        <VBox spacing="4.0" GridPane.rowIndex="4">
+                        <VBox spacing="4.0" GridPane.rowIndex="4" GridPane.valignment="TOP">
                            <children>
                               <Label styleClass="subtitle" stylesheets="@assets/styles.css" text="Procedure" wrapText="true" />
                               <Label fx:id="procedure" maxWidth="1.7976931348623157E308" styleClass="body-text" stylesheets="@assets/styles.css" text="Recipe Procedure" wrapText="true" />
@@ -74,7 +78,7 @@
             <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" />
          </columnConstraints>
          <rowConstraints>
-            <RowConstraints minHeight="10.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints fillHeight="false" minHeight="10.0" valignment="CENTER" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
             <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
@@ -93,21 +97,19 @@
                   <Insets left="20.0" right="20.0" />
                </GridPane.margin>
             </Label>
-            <HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="120.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" styleClass="nav-hbox" stylesheets="@assets/styles.css" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                <children>
-                  <Button mnemonicParsing="false" onAction="#backToHome" stylesheets="@assets/styles.css" text="Home">
+                  <Button mnemonicParsing="false" onAction="#backToHome" styleClass="nav-button" stylesheets="@assets/styles.css" text="Home">
                      <HBox.margin>
-                        <Insets left="1.0" right="1.0" />
+                        <Insets />
                      </HBox.margin>
                   </Button>
-                  <Separator maxHeight="-Infinity" orientation="VERTICAL" prefHeight="40.0" prefWidth="5.0" stylesheets="@assets/styles.css" />
-                  <Button layoutX="263.0" layoutY="27.0" mnemonicParsing="false" onAction="#addRecipe" stylesheets="@assets/styles.css" text="Add Recipe">
+                  <Button layoutX="263.0" layoutY="27.0" mnemonicParsing="false" onAction="#addRecipe" styleClass="nav-button" stylesheets="@assets/styles.css" text="Add Recipe">
                      <HBox.margin>
-                        <Insets left="1.0" right="1.0" />
+                        <Insets />
                      </HBox.margin>
                   </Button>
-                  <Separator layoutX="109.0" layoutY="50.0" maxHeight="-Infinity" orientation="VERTICAL" prefHeight="40.0" prefWidth="5.0" stylesheets="@assets/styles.css" />
-                  <Button layoutX="111.0" layoutY="47.0" mnemonicParsing="false" onAction="#about" stylesheets="@assets/styles.css" text="About" />
+                  <Button layoutX="111.0" layoutY="47.0" mnemonicParsing="false" onAction="#about" styleClass="nav-button" stylesheets="@assets/styles.css" text="About" />
                </children>
             </HBox>
          </children>
